@@ -1,0 +1,36 @@
+#include <iostream>
+#include<string.h>
+using namespace std;
+class Customer{
+	public:
+  		string name;
+  		
+};
+class Bank{
+	public:
+  		int id;
+  		
+};
+class Account:public Customer,public Bank{
+	public:
+  		int no;
+  		int bal;
+  		
+  	void interest(){
+      	cin>>name>>id>>no>>bal;
+    	int inter;
+      	inter=(bal*3*12)/100;
+      		cout<<"Customer Name="<<name<<endl;
+      		cout<<"Customer Id="<<id<<endl;
+      		cout<<"Account No="<<no<<endl;
+      		cout<<"Account Balance="<<bal<<endl;
+      		cout<<"Interest="<<inter<<endl;
+    }
+
+};
+
+int main() {
+  Account obj;
+  obj.interest();
+	return 0;
+}
