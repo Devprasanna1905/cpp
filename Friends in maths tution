@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+class A{
+	public:
+  		int p;
+  	void display(){
+    	cin>>p;
+    }
+};
+class B{
+	public:
+  		int c;
+  	void display(){
+    	cin>>c;
+    }
+};
+class C:public A,public B{
+  	public:
+  		int t;
+  		
+  	void display(){
+      	A::display();
+      	B::display();
+    	t=c*p;
+      	 cout<<t;
+    }
+};
+int main(){
+	C sample;
+  	sample.display();
+  	return 0;
+}
