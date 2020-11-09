@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+class data{
+	public:
+  		int a,b,c,d;
+  	void setdata(){
+    	cin>>a>>b;
+    	cin>>c>>d;
+      	cout<<-a<<" "<<-b<<endl;
+      	cout<<-c<<" "<<-d<<endl;
+    }
+};
+int main() {
+	data obj;
+  	obj.setdata();
+	return 0;
+}
