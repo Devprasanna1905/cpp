@@ -1,0 +1,24 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+int addnumbers(int a,int b);
+int main()
+{
+    int n,j;
+    scanf("%d",&j);
+    scanf("%d",&n);
+    addnumbers(j,n);
+}
+int addnumbers(int a,int b)
+{
+    for(int i=0;i<=b;i++)
+    {
+       printf("%d\n",a*i);
+    }
+}
